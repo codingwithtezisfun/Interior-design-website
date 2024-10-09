@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .footer-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-top: 1px solid #dee2e6;
+        }
+        .inner-top {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .inner-bottom {
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .copyright {
+            float: left;
+            margin-top: 5px;
+        }
+        .designed-by {
+            float: right;
+        }
+        .hacker-icon {
+            display: inline-block;
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .clearfix {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            font-size: 24px;
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+        .social-icons .fa-twitter {
+            color: #1DA1F2; /* Twitter blue */
+        }
+        .social-icons .fa-facebook {
+            color: #1877F2; /* Facebook blue */
+        }
+        .social-icons .fa-tiktok {
+            color: #000000; /* TikTok black */
+        }
+        .social-icons .fa-youtube {
+            color: #FF0000; /* YouTube red */
+        }
+        .social-icons .fa-whatsapp {
+            color: #25D366; /* WhatsApp green */
+        }
+        .social-icons .fa-envelope {
+            color: #E74C3C; /* Email light blue */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .inner-top {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form content here -->
+
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="inner-top">
+                        <div>
+                            <h3>Our Contacts</h3>
+                            <p>Contact information goes here</p>
+                        </div>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Location details go here</p>
+                        </div>
+                        <div>
+                            <h3>Who we are</h3>
+                            <p>About us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="inner-bottom">
+                        <div class="social-icons">
+                            <a href="https://twitter.com" target="_blank" class="fab fa-twitter" aria-label="Twitter"></a>
+                            <a href="https://facebook.com" target="_blank" class="fab fa-facebook" aria-label="Facebook"></a>
+                            <a href="https://tiktok.com" target="_blank" class="fab fa-tiktok" aria-label="TikTok"></a>
+                            <a href="https://youtube.com" target="_blank" class="fab fa-youtube" aria-label="YouTube"></a>
+                            <a href="https://wa.me/2540729151582" target="_blank" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
+                            <a href="mailto:eantez254@gmail.com" class="fas fa-envelope" aria-label="Email"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="copyright">© 2024 Vintex Interior Solutions </div>
+                <div class="copyright"><a href="#">Terms and Conditions</a></div>
+                <div class="designed-by">Website designed and created by <a href="#" class="hacker-icon">&#x1f575;</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
